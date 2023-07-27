@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Sen');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Sen' , sans-serif;
+    box-sizing: border-box;
+}
+
+section{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: #2f4454;
+    overflow: hidden;
+}
+
+section .heading {
+    display: inline-block;
+    position: relative;
+    color: #da7b93;
+    font-size: 4vw;
+    padding: 60px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+section.heading:before{
+    position: absolute;
+    content: '';
+    width: 15%;
+    height: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25%;
+    background: #393939;
+}
+
+section .heading b{
+    color: #080808;
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.wrapper .container{
+    position: relative;
+    width: 350px;
+    background: #f5f5f5;
+    margin: 40px 10px;
+    padding: 30px 20px;
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+
+.wrapper .container .profile{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10%;
+    width: 100%;
+    display: block;
+}
+
+.wrapper .container .profile .imgBox{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    border: 8px solid #2f4454;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.wrapper .container .profile .imgBox img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.wrapper .container .profile .imgBox:hover img{
+    filter: saturate(140%);
+    transform: scale(0.95);
+}
+
+.wrapper .container .profile h2{
+    padding: 5px 0;
+    text-transform: capitalize;
+    color: #1c3334;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.wrapper .container p{
+    margin-top: 50px;
+    color: #1c3334;
+    padding: 0 8px;
+    font-size: 15px;
+    opacity: 1;
+}
+
+.wrapper .container .left{
+    font-size: 30px;
+    display: block;
+    text-align: left;
+    color: #376e6f;
+}
+
+.wrapper .container .right{
+    font-size: 30px;
+    display: block;
+    text-align: right;
+    color: #376e6f;
+}
+
+.wrapper .container .social{
+    width: 100%;
+}
+
+.wrapper .container .social i{
+    font-size: 1.2em;
+    color: #ffffff;
+    padding: 8px;
+    background: #1c3334;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px rgba(51, 50, 50, 0.5);
+}
+
+.wrapper .container .social i:hover{
+    background: #da7b93;
+}
